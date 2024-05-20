@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Our Products</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add the provided CSS code here */
+    .products-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .products-item img {	
+      width: 200px; /* Adjust the width as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .products-item-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .products-item h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .price-and-button {
+      display: flex;
+      flex-direction: column; /* Updated to column layout */
+      align-items: flex-start; /* Updated alignment */
+      margin-top: 10px; /* Updated margin-top */
+    }
+
+    .products-item .price {
+      font-weight: bold;
+      margin-bottom: 10px; /* Added margin-bottom */
+    }
+
+    .products-item button {
+      width: 120px;
+      border: 0;
+      padding: 10px 10px;
+      outline: none;
+      color: #fff;
+      background: linear-gradient(to right, #333, #333);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: width 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .products-item button img {
+      width: 30px;
+      display: none;
+    }
+
+    .products-item button:hover img {
+      display: block;
+      margin-left: 5px;
+    }
+
+    .products-item button:hover {
+      width: 140px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="L and E-LOGO.jpg" alt="Dear Cravings Logo"></a>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>        
+	  <li><a href="login.html">Log in</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <!-- Content for the products section -->
+    <h2>Our Products</h2>
+    <div class="products-item">
+      <img src="sand2_picture.jpg"alt="Products Item 1">
+      <img src="gravel_picture.jpeg"alt="Products Item 2">
+      <div class="menu-item-content">
+        <h3>Gravel, Sand, Bolders and Garden Soil. </h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;800.00-One Cubic (Sand)</span>
+          <button type="button" onclick="createOrderPage('sand)">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;800.00-One Cubic (Gravel) </span>
+          <button type="button" onclick="createOrderPage('sand')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="products-item">
+      <img src="hallowblocks_4size.jpg" alt="Products Item 3">
+      <img src="holllow blocks-5.jpg"alt="Products Item 3">
+      <div class="pruducts-item-content">
+        <h3>Hallowblocks Size4 and Size5.With free delivery.</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;15.00 in one pcs.-(Size4)</span>
+          <button type="button" onclick="createOrderPage('hallowblocks(Size4)')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;18.00 in one pcs.-(Size5)</span>
+          <button type="button" onclick="createOrderPage('hallowblocks(Size5)')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+	<div class="products-item">
+      <img src="wire_mesh.webp"alt="Products Item 4">
+       <img src= "coated welded_picture.jpg"alt="Products Item 4">
+      <div class="products-item-content">
+        <h3>1x1inch galvanized welded wire mesh plastic coated welded wire mesh.</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;2,100.00(1-99 rolls)</span>
+          <button type="button" onclick="createOrderPage('wire mesh')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;;(500-999 rolls) 14,400.00</span>
+          <button type="button" onclick="createOrderPage('wire mesh')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="cements_picture.jpg" alt="Products Item 5">
+      <img src="cement2_picture.jpg" alt="Products Item 5">
+      <div class="menu-item-content">
+        <h3>Cements(Republic, Holcim, Mayon). </h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;250.00 - (One bag).</span>
+          <button type="button" onclick="createOrderPage('cements')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;5000.00 - (One-Taner Bag).</span>
+          <button type="button" onclick="createOrderPage('cements')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="products-item">
+      <img src="images_iron.jpg"alt="Products Item 5">
+      <img src="images_iron2.jpg"alt="Products Item 5">
+      <div class="menu-item-content">
+        <h3> y8 y10 y12 steel rebar 16mm 25mm 30mm steel rebar.</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;(120.00 one pcs) (150.00 16mm one pcs) (200.00 25mm one pcs) (350.00 30mm one pcs)</span>
+          <button type="button" onclick="createOrderPage('iron')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>    
+	<div class="products-item">
+      <img src="image_nail1.webp" alt="Products Item 6">
+      <img src= "image_nail2.jpg"alt="Products Item 6">
+      <div class="products-item-content">
+        <h3>lb BRIGHT Construction Nails 4 X 2-1/2 Inch Aprox125 flat head square tip.</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;68.00 1 KILO Finishing Nail / PAKO (1", 1.25", 1.5", 2", 2.5",3")</span>
+          <button type="button" onclick="createOrderPage('Buy 1 Take 1 Sandwich')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="products-item">
+      <img src="images_lumber1.jpg"alt="Products Item 7">
+      <img src="download_lumber2.jpg"alt="Products Item 7">
+      <div class="menu-item-content">
+        <h3>Coco Lumber</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;64.00 2x2x2/80.00 2x2x10/96.00 2x2x12.</span>
+          <button type="button" onclick="createOrderPage('Chicken Karaage')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="products-item">
+      <img src="images_pinolic.jpg" alt="Products Item 8">
+      <img src="image_marine.jpg" alt="Products Item 8">
+      <div class="menu-item-content">
+        <h3>Marine Plywood and Pinolic Plywood</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;550.00 - Pinolic plywood.</span>
+          <button type="button" onclick="createOrderPage('Plywood')">ORDER<img src="images/arrow.png"></button>
+           <span class="price">&#8369;1000.00 - (Marine plywood.).</span>
+          <button type="button" onclick="createOrderPage('Plywood')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="products-item">
+      <img src="download_boysen.jpg" alt="Boysen Item 9">
+      <img src="download_boysen2.jpg" alt="Boysen Item 9">
+     <div class="products-item-content">
+        <h3>Boysen Paint.</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;250.00</span>
+          <button type="button" onclick="createOrderPage('boysen')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;2,500.00 (Large)</span>
+          <button type="button" onclick="createOrderPage('boysen')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <img src="Fb_picture.png">
+      <img src="Ig_picture.png">
+      <img src="bnb_picture.png">
+    </div>
+    <p>&copy;2024 Construction Supply. Quality products. </p>
+  </footer>
+
+  <script>
+    function createOrderPage(productName) {
+      // Create a new webpage or redirect to a new URL with the product name as a parameter
+      window.location.href = "order.html?product=" + encodeURIComponent(productName);
+    }
+  </script>
+</body>
+</html>
